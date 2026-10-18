@@ -37,6 +37,7 @@
             color: var(--text-main);
             min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             padding: 40px 20px;
@@ -186,6 +187,25 @@
             box-shadow: 0 6px 20px rgba(245, 158, 11, 0.6);
         }
 
+        /* Footer Styling */
+        footer.site-footer {
+            margin-top: 24px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        footer.site-footer a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        footer.site-footer a:hover {
+            color: var(--primary-accent);
+            text-decoration: underline;
+        }
+
         @media (max-width: 640px) {
             .container {
                 padding: 28px 20px;
@@ -230,6 +250,11 @@
             <a href="https://manoknapulamod.com/" class="btn-download" target="_blank" rel="noopener">Get Unlocked APK Now</a>
         </div>
     </div>
+
+    <!-- Footer with Bitbucket Link -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Manok Na Pula Mod. | <a href="https://blogs121.bitbucket.io/manoknapula.html" target="_blank" rel="noopener">Cloud Resource Directory</a></p>
+    </footer>
 
 </body>
 </html>
